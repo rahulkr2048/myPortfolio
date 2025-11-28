@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+nav {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: black;
+  align-items: center;
+  color: white;
+  font-family: arial;
+}
+
+nav h1 {
+  white-space: nowrap;
+  cursor: default;
+}
+
+ul {
+  display: flex;
+  gap: 20px
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  padding: 6px 10px;
+  /* background-color: hsl(0, 0%, 90%); */
+  border-radius: 4px;
+  font-family: arial;
+  transition: all .1s ease-in-out;
+}
+
+ul li a:hover {
+  /* background-color: hsl(0, 0%, 85%); */
+  color: darkgray;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  font-family: arial;
+  font-weight: bolder;
+  color: white;
+  padding: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: black;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 18px;
+  font-family: arial;
+  color: white;
+  text-align: center;
+}
+
+#home {
+  background-color: steelblue;
+}
+
+#about {
+  background-color: crimson;
+}
+
+#skills {
+  background-color: rebeccapurple;
+}
+
+#contact {
+  background-color: lightseagreen;
+}
+
+.nav2 {
+  display: flex;
+  font-size: 24px;
+}
+
+.nav2 i {
+  visibility: hidden;
+}
+
+
+@media (max-width: 640px) {
+
+
+  .nav2 ul {
+    background-color: #111;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    gap: 20px;
+    top: 60px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav2 i {
+    display: block;
+  visibility: visible;
+    cursor: pointer;
+  }
+}
+
+.nav2 i {
+  display: block;
+}
+
+main {
+  font-size: 14vw;
+}
